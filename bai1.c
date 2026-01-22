@@ -18,14 +18,19 @@
 #include <stdio.h>
 
 int main(){
+    int soN;
 
-    // Khai báo biến
+    printf("Chương trình kiểm tra số chẵn lẻ\n");
 
+    printf("Nhập vào một số nguyên: ");
+    scanf("%d", &soN);
 
-    // Nhập dữ liệu
-
-
-    // Xử lý, tính toán VÀ Hiển thị kết quả
+    if(soN % 2 == 0){
+        printf("Số %d là số chẵn.\n", soN);
+    } else {
+        printf("Số %d là số lẻ.\n", soN);
+    }
 
     return 0;
+
 }
