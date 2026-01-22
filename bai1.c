@@ -1,7 +1,7 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
- * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
+ * Họ và tên: [Võ Quốc Thịnh]
+ * MSSV:      [PS48006]
+ * Lớp:       [CS21301]
  *****************************************************************************/
 
 // BÀI 1: XÂY DỰNG CHƯƠNG TRÌNH TÍNH HỌC LỰC  
@@ -18,19 +18,26 @@
 #include <stdio.h>
 
 int main(){
-    int soN;
-
-    printf("Chương trình kiểm tra số chẵn lẻ\n");
-
-    printf("Nhập vào một số nguyên: ");
-    scanf("%d", &soN);
-
-    if(soN % 2 == 0){
-        printf("Số %d là số chẵn.\n", soN);
+    // Nhập điểm và kiểm tra học lực
+    printf("nhập sô điểm của bạn: ");
+    int diem;
+    scanf("%d", &diem);
+    if (diem >= 0 && diem <= 10) {
+        if (diem >= 9)
+            printf("Học lực: Xuất sắc\n");
+        else if (diem >= 8)
+            printf("Học lực: Giỏi\n");
+        else if (diem >= 6.5)
+            printf("Học lực: Khá\n");
+        else if (diem >= 5)
+            printf("Học lực: Trung bình\n");
+        else if (diem >= 3.5)
+            printf("Học lực: Yếu\n");
+        else
+            printf("Học lực: Kém\n");
     } else {
-        printf("Số %d là số lẻ.\n", soN);
+        printf("Điểm không hợp lệ. Vui lòng nhập điểm từ 0 đến 10.\n");
     }
 
     return 0;
-
-}
+  }
